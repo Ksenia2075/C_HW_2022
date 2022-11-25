@@ -7,7 +7,7 @@ int[] GetArray(int size, int minValue, int maxValue)
     int[] res = new int[size];
     for(int i=0; i<size; i++)
     {
-        res[i] = new Random().Next(minValue, maxValue+1);
+        res[i] = new Random().Next(minValue, maxValue);
     }
     return res;
 }
@@ -30,5 +30,5 @@ for (int a = 0; a < array.Length; a++)
 if (array[a] % 2 == 0)
 count++;
 Console.WriteLine();
-Console.WriteLine($"четных чисел - {count}");
+Console.WriteLine($"количество четных чисел - {count}");
 
