@@ -13,6 +13,8 @@ Console.WriteLine("введите номер столбца");
 int m = Convert.ToInt32(Console.ReadLine());
 int [,] numbers = new int [3,4];
 FillArray(numbers);
+PrintArray(numbers);
+
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
 {
     Console.WriteLine("такого элемента нет");
@@ -22,7 +24,6 @@ else
     Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {numbers[n-1,m-1]}");
 }
 
-PrintArray(numbers);
 
 void FillArray(int[,] matr)
 {
@@ -34,6 +35,7 @@ void FillArray(int[,] matr)
         }
     }
 }
+
 
 void PrintArray(int[,] matr)
 {
