@@ -24,7 +24,10 @@ else
     Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {numbers[n-1,m-1]}");
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a25f5d (подкорректировала 7_2)
 void FillArray(int[,] matr)
 {
     for(int i=0; i<matr.GetLength(0); i++)
@@ -48,4 +51,5 @@ void PrintArray(int[,] matr)
         Console.WriteLine();
     }
 }
+
 
